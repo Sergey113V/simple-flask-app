@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    index page
+
+{% endblock %}
+
+
+{% block content_title %}
+  Posts
+{% endblock %} | Flask app
+
+{% block content %}
+
+  {% for post in posts %}
+
+  <p>
+      {{ post.title }}
+  </p>
+
+  {% endfor %}
+
+{% endblock %}
